@@ -1,0 +1,168 @@
+.rock_container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  width: 700px;
+  max-width: 100%;
+  margin: 1.5rem auto;
+  padding: 2rem 0;
+  height: auto;
+  background-color: #FAFAFA;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 0 #000
+}
+
+    
+
+.dialog_message {
+  position: absolute;
+  top: -100%;
+  border: 1px solid #838080;
+  box-shadow: 0 2px 2px 1px #838080;
+  width: 30%;
+  height: 6%;
+  background-color: rgb(130, 231, 130);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: top 1.5s ease-in-out;
+  z-index: 1000; 
+ }
+
+.display_message {
+  top: 20%;
+}
+
+
+.btn_container {
+  display: flex;
+  gap: 3rem;
+  padding: 2rem 3rem;
+}
+
+.btn_container button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 1.5rem;
+  color: #fff;
+  background-color: #000;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  cursor: pointer;
+  border: 1px solid #000;
+
+}
+
+.btn_container button:hover{
+   background-color: #883030;
+
+}
+
+.btn_container button img, .display_choice img{
+  width: 50px;
+  height: 50px;
+}
+
+
+/* display choice */
+.display_choice{
+ width: 100%;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+
+}
+
+.player_choice, .computer_choice{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.display_choice img{
+ display: none;
+}
+
+
+/* display result */
+.display_result{
+ margin-top: 4rem;
+ width: 100%;
+ display: flex;
+ gap: 2rem;
+ justify-content: center;
+ align-items: center;
+}
+.display_win, .display_tie, .display_lose{
+ display: flex;
+ gap: 1rem;
+ justify-content: center;
+ align-items: center;
+}
+
+.display_win>p{
+ color: rgb(130, 231, 130)
+}
+.display_tie>p{
+ color: rgb(99, 99, 254)
+}
+.display_lose>p{
+ color: rgb(252, 75, 75);
+}
+
+/* display who wins */
+.displayWin{
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ background-color: rgba(0, 0, 0, 0.712);
+ display: none;
+ flex-direction: column;
+ justify-content:center;
+ align-items: center;
+ color: #fff;
+ font-size: 1.5rem;
+
+}
+
+
+
+.displayWin button{
+ padding: 15px 20px;
+ border-radius: 5px;
+ background-color: rgb(131, 131, 230);
+ letter-spacing: 1.5px;
+ cursor: pointer;
+}
+
+.displayWin button:hover{
+ background-color: rgb(186, 186, 233);
+}
+
+@media screen and (max-width: 667px){
+ 
+  h1 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: .9rem;
+  }
+
+ .btn_container button {
+  width: 75px;
+  height: 75px;
+ }
+ 
+ .btn_container button img, .display_choice img{
+  width: 35px;
+  height: 35px;
+}
+}
