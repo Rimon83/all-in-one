@@ -91,7 +91,15 @@ const Navbar = () => {
           >
             Fibonacci Generator
           </Link>
-          <Link className="link">Link 5</Link>
+
+          <Link
+            className="link"
+            to="to-do-list"
+            onClick={handleSingleLink}
+          >
+            To Do List
+          </Link>
+          
           <Link className="link">Link 6</Link>
         </div>
         <div className="drop_list_one">

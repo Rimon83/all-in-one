@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Routes} from "react-router-dom";
 import Navbar from './components/(navbar)/Navbar'
 import HomePage from './(home)/HomePage';
-import { BMI, Calculator, Fibonacci, LeapYear, Life } from './(calculation)';
+import { BMI, Calculator, Fibonacci, LeapYear, Life, ToDoList } from './(calculation)';
 import { Dice, Drum, RockPaperScissors } from './(games)';
 
 
@@ -21,6 +21,7 @@ const Layout = () => {
         <Route path="/calculator" element={<Calculator/>} />
         <Route path="/dice" element={<Dice/>} />
         <Route path="/drum-kit" element={<Drum/>} />
+        <Route path="/to-do-list" element={<ToDoList/>} />
       </Routes>
     </section>
   );

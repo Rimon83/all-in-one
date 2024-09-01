@@ -1,0 +1,35 @@
+.duty_list{
+ width: 100%;
+ display: flex;
+  gap: 1rem;
+ flex-direction: column;
+  margin-top: 2rem
+
+}
+
+.duty_list div{
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ border: 1px solid rgb(196, 190, 190);
+ padding: 0 2rem;
+ border-radius: 5px;
+
+}
+
+.duty_list h4{
+ width: 100%;
+ font-size: 1.5rem;
+
+}
+.duty_list p{
+ width: 100%;
+ color: rgb(150, 148, 148)
+
+}
+
+.duty_list button{
+ width: 40%;
+ background: red;
+
+}
